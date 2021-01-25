@@ -6,7 +6,7 @@
         background-color: mintcream;
         display: inline;
         position: fixed;
-        width: auto;
+        width: 100%;
     }
 
     @media (max-width: 800px) {
@@ -80,7 +80,7 @@
     }
 
     #video {
-        align-content: center;
+        align-self: center;
     }
 </style>
 
@@ -106,30 +106,34 @@
     <div>
         <h2 id="products">Products</h2>
 
-        <div class="card">
-            <img src="Body_Lotion.jpg" alt="Body Lotion" style="width:500px;height:600px;">
-            <h3>Body Lotion</h3>
-            <p class="price">$25.99</p>
-            <p>This body lotion is the ultimate treat for your skin.</p>
-            <p><button>Add to Cart</button></p>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="Body_Lotion.jpg" alt="Body Lotion">
+                    <h3>Body Lotion</h3>
+                    <p class="price">$25.99</p>
+                    <p>This body lotion is the ultimate treat for your body.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="moisboost.jpg" alt="Moisture Boost">
+                    <h3>Moisture Boost</h3>
+                    <p class="price">$26.99</p>
+                    <p>A light hydrating hyaluronic gel that plumps up the skin.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
         </div>
-
-        <div class="card">
-            <img src="moisboost.jpg" alt="Moisture Boost" style="width:500px;height:600px;">
-            <h3>Moisture Boost</h3>
-            <p class="price">$19.99</p>
-            <p>This body lotion is the ultimate treat for your skin.</p>
-            <p><button>Add to Cart</button></p>
-        </div>
-
     </div>
 
     <div>
         <h2 id="our-story">Our Story</h2>
 
-        <video id="video" width="520" height="440" controls>
+        <video id="video" width="720" height="640" controls>
             <source src="RobiSkincare.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+            Your browser does not support this vide.
         </video>
     </div>
 
@@ -137,11 +141,11 @@
         <h2 id="subscribe">Subscribe to our Newsletter</h2>
 
         <form id="form" action="https://www.freecodecamp.com/email-submit)">
-            <label for="name">Full Name:</label>
-            <input type="name" id="name" name="name" placeholder="Enter Full Name">
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" placeholder="Enter email">
-            <input type="submit" id="submit" value="submit">
+            <label for="name" style="font-family: Arial, Helvetica, sans-serif;">Full Name:</label>
+            <input type="name" id="name" name="name" placeholder="Enter Full Name"><br />
+            <label for="email" style="font-family: Arial, Helvetica, sans-serif;">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email"><br />
+            <input type="submit" id="submit" value="Subscribe">
         </form>
     </div>
 
