@@ -2,6 +2,10 @@
 <html>
 
 <style>
+    body {
+        padding-top: 65px;
+    }
+
     header {
         background-color: mintcream;
         display: inline;
@@ -46,6 +50,16 @@
         font-family: Arial, Helvetica, sans-serif;
     }
 
+    .column {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+    }
+
+    .row {
+        margin: 0 -5px;
+    }
+
     .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         max-width: 300px;
@@ -62,7 +76,7 @@
     .card button {
         border: none;
         outline: 0;
-        padding: 12px;
+        padding: 12px 12px 12px 12px;
         color: white;
         background-color: #000;
         text-align: center;
@@ -105,20 +119,26 @@
     <div>
         <h2 id="products">Products</h2>
 
-        <div class="card">
-            <img id="bodylotion" src="Body_Lotion.jpg" style="width:100%">
-            <h3>Body Lotion</h3>
-            <p class="price">$25.99</p>
-            <p>This body lotion is the ultimate treat for your body.</p>
-            <button>Add to Cart</button>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img id="bodylotion" src="Body_Lotion.jpg" style="width:100%">
+                    <h3>Body Lotion</h3>
+                    <p class="price">$25.99</p>
+                    <p>This body lotion is the ultimate treat for your body.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
         </div>
 
-        <div class="card">
-            <img id="moisture" src="moisboost.jpg" style="width:100%">
-            <h3>Moisture Boost</h3>
-            <p class="price">$26.99</p>
-            <p>A light hydrating hyaluronic gel that plumps up the skin.</p>
-            <button>Add to Cart</button>
+        <div class="column">
+            <div class="card">
+                <img id="moisture" src="moisboost.jpg" style="width:100%">
+                <h3>Moisture Boost</h3>
+                <p class="price">$26.99</p>
+                <p>A light hydrating hyaluronic gel that plumps up the skin.</p>
+                <button>Add to Cart</button>
+            </div>
         </div>
     </div>
 
